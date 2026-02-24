@@ -63,8 +63,6 @@ Remote agents can then connect securely using the Bearer token (`your-secret-tok
 
 ## 🛠️ Use Cases
 
-I don't build toys; I build tools to solve painful engineering problems. Here is how I actually use this in my day-to-day:
-
 1. **Deterministic Refactoring**
    I pass the agent a high-level task. It uses `semantic_search` to map the neighborhood (e.g., finding the "billing provider"), and then strictly enforces `get_references` to track every upstream caller. It ensures cross-file edits are safe before opening a PR.
 
